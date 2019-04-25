@@ -23,7 +23,7 @@ const isPartActive = (history, path) => {
 const Menu = withRouter(({ history }) => (
   <AppBar position="static" color="secondary">
     <Toolbar>
-      <Typography type="title" color="dark">
+      <Typography type="title" color="primary">
         <h1>mrKditos</h1>
       </Typography>
       <div>

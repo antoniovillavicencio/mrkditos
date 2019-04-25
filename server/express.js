@@ -24,13 +24,13 @@ import { blueGrey, lightGreen } from 'material-ui/colors'
 //end
 
 //comment out before building for production
-import devBundle from './devBundle'
+//import devBundle from './devBundle'
 
 const CURRENT_WORKING_DIR = process.cwd()
 const app = express()
 
 //comment out before building for production
-devBundle.compile(app)
+//devBundle.compile(app)
 
 // parse body params and attache them to req.body
 app.use(bodyParser.json())
@@ -42,8 +42,6 @@ app.use(helmet())
 // enable CORS - Cross Origin Resource Sharing
 app.use(cors())
 
-app.use('/dist', express.static(path.join(CURRENT_WORKING_DIR, 'dist')))
-
 // mount routes
 app.use('/', userRoutes)
 app.use('/', authRoutes)
@@ -54,23 +52,23 @@ app.get('*', (req, res) => {
    const sheetsRegistry = new SheetsRegistry()
    const theme = createMuiTheme({
      palette: {
+       secondary: {
+         light: "#FFECB3",
+         main: "#FFC107",
+         dark: "#FFA000",
+         contrastText: "#fafafa"
+       },
        primary: {
-       light: '#8eacbb',
-       main: '#607d8b',
-       dark: '#34515e',
-       contrastText: '#fff',
-     },
-     secondary: {
-       light: '#e7ff8c',
-       main: '#b2ff59',
-       dark: '#7ecb20',
-       contrastText: '#000',
-     },
-       openTitle: blueGrey['400'],
-       protectedTitle: lightGreen['400'],
-       type: 'light'
+         light: "#FFCCBC",
+         main: "#FF5722",
+         dark: "#E64A19",
+         contrastText: "#fafafa"
+       },
+       openTitle: "cb3737",
+       protectedTitle: "cb3737",
+       type: "light"
      }
-   })
+   });
    const generateClassName = createGenerateClassName()
    const context = {}
    const markup = ReactDOMServer.renderToString(
