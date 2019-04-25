@@ -64,7 +64,7 @@ class Profile extends Component {
     return (
       <Paper className={classes.root} elevation={4}>
         <Typography type="title" className={classes.title}>
-          Profile
+          Usuario
         </Typography>
         <List dense>
           <ListItem>
@@ -87,7 +87,7 @@ class Profile extends Component {
           </ListItem>
           <Divider/>
           <ListItem>
-            <ListItemText primary={"Joined: " + (
+            <ListItemText primary={"Se unió: " + (
               new Date(this.state.user.created)).toDateString()}/>
           </ListItem>
         </List>

@@ -71,11 +71,11 @@ class MyShops extends Component {
     <div>
       <Paper className={classes.root} elevation={4}>
         <Typography type="title" className={classes.title}>
-          Your Shops
+          Tus Tiendas
           <span className={classes.addButton}>
             <Link to="/seller/shop/new">
               <Button color="primary" variant="raised">
-                <Icon className={classes.leftIcon}>add_box</Icon>  New Shop
+                <Icon className={classes.leftIcon}>add_box</Icon> Nueva Tienda
               </Button>
             </Link>
           </span>

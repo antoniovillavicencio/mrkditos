@@ -80,7 +80,7 @@ class Search extends Component {
           <TextField
             id="select-category"
             select
-            label="Select category"
+            label="Categorías"
             className={classes.textField}
             value={this.state.category}
             onChange={this.handleChange("category")}
@@ -100,7 +100,7 @@ class Search extends Component {
           </TextField>
           <TextField
             id="search"
-            label="Search products"
+            label="Buscar productos"
             type="search"
             onKeyDown={this.enterKey}
             onChange={this.handleChange("search")}

@@ -105,13 +105,13 @@ class EditProfile extends Component {
       <Card className={classes.card}>
         <CardContent>
           <Typography type="headline" component="h2" className={classes.title}>
-            Edit Profile
+            Editar Usuario
           </Typography>
-          <TextField id="name" label="Name" className={classes.textField} value={this.state.name} onChange={this.handleChange('name')} margin="normal"/><br/>
+          <TextField id="name" label="Nombre" className={classes.textField} value={this.state.name} onChange={this.handleChange('name')} margin="normal"/><br/>
           <TextField id="email" type="email" label="Email" className={classes.textField} value={this.state.email} onChange={this.handleChange('email')} margin="normal"/><br/>
-          <TextField id="password" type="password" label="Password" className={classes.textField} value={this.state.password} onChange={this.handleChange('password')} margin="normal"/>
+          <TextField id="password" type="password" label="Contraseña" className={classes.textField} value={this.state.password} onChange={this.handleChange('password')} margin="normal"/>
           <Typography type="subheading" component="h4" className={classes.subheading}>
-            Seller Account
+            Vendedor
           </Typography>
           <FormControlLabel
             control={
@@ -122,7 +122,7 @@ class EditProfile extends Component {
                       checked={this.state.seller}
                       onChange={this.handleCheck}
               />}
-            label={this.state.seller? 'Active' : 'Inactive'}
+            label={this.state.seller? 'Activo' : 'Inactivo'}
           />
           <br/> {
             this.state.error && (<Typography component="p" color="error">
@@ -132,7 +132,7 @@ class EditProfile extends Component {
           }
         </CardContent>
         <CardActions>
-          <Button color="primary" variant="raised" onClick={this.clickSubmit} className={classes.submit}>Submit</Button>
+          <Button color="primary" variant="raised" onClick={this.clickSubmit} className={classes.submit}>Guardar</Button>
         </CardActions>
       </Card>
     )

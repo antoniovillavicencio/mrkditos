@@ -89,7 +89,7 @@ class Categories extends Component {
       <div>
         <Card className={classes.card}>
           <Typography type="title" className={classes.title}>
-            Explore by category
+            Explorar por categoría
           </Typography>
           <div className={classes.root}>
             <GridList className={classes.gridList} cols={4}>

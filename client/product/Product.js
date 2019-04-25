@@ -94,7 +94,7 @@ class Product extends Component {
               <Card className={classes.card}>
                 <CardHeader
                   title={this.state.product.name}
-                  subheader={this.state.product.quantity > 0? 'In Stock': 'Out of Stock'}
+                  subheader={this.state.product.quantity > 0? 'En existencia': 'Sin existencia'}
                 />
                 <div className={classes.flex}>
                   <CardMedia
@@ -104,7 +104,7 @@ class Product extends Component {
                   />
                   <Typography component="p" type="subheading" className={classes.subheading}>
                     {this.state.product.description}<br/>
-                    <span className={classes.price}>$ {this.state.product.price}</span>
+                    <span className={classes.price}>$ {this.state.product.price} MXN</span>
                     <Link to={'/shops/'+this.state.product.shop._id} className={classes.link}>
                       <span>
                         <Icon className={classes.icon}>shopping_basket</Icon> {this.state.product.shop.name}
@@ -117,7 +117,7 @@ class Product extends Component {
             </Grid>
             {this.state.suggestions.length > 0 &&
               (<Grid item xs={5} sm={5}>
-                <Suggestions  products={this.state.suggestions} title='Related Products'/>
+                <Suggestions  products={this.state.suggestions} title='Productos relacionados'/>
               </Grid>)}
           </Grid>
         </div>)

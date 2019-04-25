@@ -114,9 +114,9 @@ class Suggestions extends Component {
                           {item.shop.name}
                         </Typography>
                       </Link>
-                      <Typography component="p" className={classes.date}>
-                        Added on {new Date(item.created).toDateString()}
-                      </Typography>
+                      {/* <Typography component="p" className={classes.date}>
+                        Añadido el {new Date(item.created).toDateString()}
+                      </Typography> */}
                     </CardContent>
                     <div className={classes.controls}>
                       <Typography
@@ -125,7 +125,7 @@ class Suggestions extends Component {
                         className={classes.price}
                         color="primary"
                       >
-                        $ {item.price}
+                        $ {item.price} MXN
                       </Typography>
                       <span className={classes.actions}>
                         <Link to={"/product/" + item._id}>

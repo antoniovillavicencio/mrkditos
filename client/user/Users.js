@@ -42,7 +42,7 @@ class Users extends Component {
     return (
       <Paper className={classes.root} elevation={4}>
         <Typography type="title" className={classes.title}>
-          All Users
+          Todos los usuarios
         </Typography>
         <List dense>
          {this.state.users.map((item, i) => {

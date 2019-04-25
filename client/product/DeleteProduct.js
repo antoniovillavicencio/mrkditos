@@ -38,18 +38,18 @@ class DeleteProduct extends Component {
         <DeleteIcon/>
       </IconButton>
       <Dialog open={this.state.open} onClose={this.handleRequestClose}>
-        <DialogTitle>{"Delete "+this.props.product.name}</DialogTitle>
+        <DialogTitle>{"Borrar "+this.props.product.name}</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Confirm to delete your product {this.props.product.name}.
+            Confirma para borrar {this.props.product.name}.
           </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={this.handleRequestClose} color="primary">
-            Cancel
+            Cancelar
           </Button>
           <Button onClick={this.deleteProduct} color="secondary" autoFocus="autoFocus">
-            Confirm
+            Confirmar
           </Button>
         </DialogActions>
       </Dialog>
