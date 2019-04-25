@@ -1,8 +1,8 @@
 {
-  "name": "mern-marketplace",
+  "name": "mrkditos",
   "version": "1.0.0",
-  "description": "A MERN stack based online marketplace application",
-  "author": "Shama Hoque",
+  "description": "E-commerce app. Final project for Centraal Academy",
+  "author": "Antonio Villavicencio",
   "license": "MIT",
   "keywords": [
     "react",
@@ -13,9 +13,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shamahoque/mern-marketplace.git"
+    "url": "https://github.com/antoniovillavicencio/mrkditos.git"
   },
-  "homepage": "https://github.com/shamahoque/mern-marketplace",
+  "homepage": "https://github.com/antoniovillavicencio/mrkditos",
   "main": "./dist/server.generated.js",
   "scripts": {
     "development": "nodemon",
